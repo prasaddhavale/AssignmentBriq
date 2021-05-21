@@ -1,0 +1,199 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 6,
+    "passes": 6,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-05-21T11:13:38.793Z",
+    "end": "2021-05-21T11:14:00.509Z",
+    "duration": 21716,
+    "testsRegistered": 6,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "fb0a21cb-c372-414b-89f5-1453cd8b28e5",
+      "title": "",
+      "fullFile": "cypress/integration/Assignment/FormAuthentication.specs.js",
+      "file": "cypress/integration/Assignment/FormAuthentication.specs.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "29b49ce2-a5b2-4c57-87ea-91aa12951e94",
+          "title": "Verify the Form Authentication functionality",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "To verify user is able to login with correct username and password",
+              "fullTitle": "Verify the Form Authentication functionality To verify user is able to login with correct username and password",
+              "timedOut": null,
+              "duration": 8801,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#username').type('tomsmith');\ncy.get('#password').type('SuperSecretPassword!');\ncy.get('.radius').click();\ncy.get('#flash').contains('You logged into a secure area!');\ncy.get('.secondary').should('have.text', ' Logout');",
+              "err": {},
+              "uuid": "4b38ab5d-fad2-4ee6-a2e1-b595594ad6f5",
+              "parentUUID": "29b49ce2-a5b2-4c57-87ea-91aa12951e94",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "To verify user is able to Logout",
+              "fullTitle": "Verify the Form Authentication functionality To verify user is able to Logout",
+              "timedOut": null,
+              "duration": 3338,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#username').type('tomsmith');\ncy.get('#password').type('SuperSecretPassword!');\ncy.get('.radius').click();\ncy.get('.secondary').click();\ncy.get('#flash').contains('You logged out of the secure area!');\ncy.get('.radius').should('be.enabled');",
+              "err": {},
+              "uuid": "130e1cf0-5814-4f4e-9a56-3b37b08cb72b",
+              "parentUUID": "29b49ce2-a5b2-4c57-87ea-91aa12951e94",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "To verify system behavior when email id and password are left blank and log in entered",
+              "fullTitle": "Verify the Form Authentication functionality To verify system behavior when email id and password are left blank and log in entered",
+              "timedOut": null,
+              "duration": 1259,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.radius').click();\ncy.get('#flash').contains('Your username is invalid!');",
+              "err": {},
+              "uuid": "4be6f1fd-2a95-4483-b8b6-4a6dfa8d7d75",
+              "parentUUID": "29b49ce2-a5b2-4c57-87ea-91aa12951e94",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "To verify user click on login with entering Invalid username and valid password",
+              "fullTitle": "Verify the Form Authentication functionality To verify user click on login with entering Invalid username and valid password",
+              "timedOut": null,
+              "duration": 1980,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#username').type('test');\ncy.get('#password').type('SuperSecretPassword!');\ncy.get('.radius').click();\ncy.get('#flash').contains('Your username is invalid!');",
+              "err": {},
+              "uuid": "9faf1608-b154-40bf-9e17-5679081549da",
+              "parentUUID": "29b49ce2-a5b2-4c57-87ea-91aa12951e94",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "To verify user click on login with entering Valid username and Invalid password",
+              "fullTitle": "Verify the Form Authentication functionality To verify user click on login with entering Valid username and Invalid password",
+              "timedOut": null,
+              "duration": 2099,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#username').type('tomsmith');\ncy.get('#password').type('passwod');\ncy.get('.radius').click();\ncy.get('#flash').contains('Your password is invalid!');",
+              "err": {},
+              "uuid": "f18c4f8f-48a9-44ed-847d-db9574c68629",
+              "parentUUID": "29b49ce2-a5b2-4c57-87ea-91aa12951e94",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "To verify user click on login with entering Invallid username and Invalid password",
+              "fullTitle": "Verify the Form Authentication functionality To verify user click on login with entering Invallid username and Invalid password",
+              "timedOut": null,
+              "duration": 1955,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#username').type('tester');\ncy.get('#password').type('passwod');\ncy.get('.radius').click();\ncy.get('#flash').contains('Your username is invalid!');",
+              "err": {},
+              "uuid": "efe6323e-a74a-4eba-bf13-775bf4917f86",
+              "parentUUID": "29b49ce2-a5b2-4c57-87ea-91aa12951e94",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "4b38ab5d-fad2-4ee6-a2e1-b595594ad6f5",
+            "130e1cf0-5814-4f4e-9a56-3b37b08cb72b",
+            "4be6f1fd-2a95-4483-b8b6-4a6dfa8d7d75",
+            "9faf1608-b154-40bf-9e17-5679081549da",
+            "f18c4f8f-48a9-44ed-847d-db9574c68629",
+            "efe6323e-a74a-4eba-bf13-775bf4917f86"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 19432,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

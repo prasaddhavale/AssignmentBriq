@@ -1,0 +1,180 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-05-21T11:13:17.227Z",
+    "end": "2021-05-21T11:13:31.735Z",
+    "duration": 14508,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "cb14e1b0-3029-474e-ba60-95e84f8b9497",
+      "title": "",
+      "fullFile": "cypress/integration/Assignment/Checkbox.specs.js",
+      "file": "cypress/integration/Assignment/Checkbox.specs.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b4135b95-1698-47a8-866b-e3568aa9745e",
+          "title": "Verify the Checkboxes functionality",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "To verify that default checkbox 2 is checked",
+              "fullTitle": "Verify the Checkboxes functionality To verify that default checkbox 2 is checked",
+              "timedOut": null,
+              "duration": 9241,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#checkboxes > :nth-child(3)').should('be.checked');",
+              "err": {},
+              "uuid": "b53203f5-90ae-436d-b052-c87a81c2cfaa",
+              "parentUUID": "b4135b95-1698-47a8-866b-e3568aa9745e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "To verify user is able to check the check box when other checkbox is already checked",
+              "fullTitle": "Verify the Checkboxes functionality To verify user is able to check the check box when other checkbox is already checked",
+              "timedOut": null,
+              "duration": 610,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#checkboxes > :nth-child(3)').should('be.checked');\ncy.get('#checkboxes > :nth-child(1)').check().should('be.checked');",
+              "err": {},
+              "uuid": "928f1f07-4247-4ab2-bf21-e3383e25e90a",
+              "parentUUID": "b4135b95-1698-47a8-866b-e3568aa9745e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "To verify user is able to check the check box 1 and other checkbox is unchecked",
+              "fullTitle": "Verify the Checkboxes functionality To verify user is able to check the check box 1 and other checkbox is unchecked",
+              "timedOut": null,
+              "duration": 791,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#checkboxes > :nth-child(3)').uncheck().should('not.be.checked');\ncy.get('#checkboxes > :nth-child(1)').check().should('be.checked');",
+              "err": {},
+              "uuid": "a085d3c5-19a2-4fbf-b918-4a6c08b017d2",
+              "parentUUID": "b4135b95-1698-47a8-866b-e3568aa9745e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "To verify user is able to check the check box 2 when other checkbox is  unchecked",
+              "fullTitle": "Verify the Checkboxes functionality To verify user is able to check the check box 2 when other checkbox is  unchecked",
+              "timedOut": null,
+              "duration": 838,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#checkboxes > :nth-child(3)').check().should('be.checked');\ncy.get('#checkboxes > :nth-child(1)').uncheck().should('not.be.checked');",
+              "err": {},
+              "uuid": "1a00a426-ea3b-4a33-abdf-e0fd448d7a27",
+              "parentUUID": "b4135b95-1698-47a8-866b-e3568aa9745e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "To verify user is able to uncheck the checked checkbox",
+              "fullTitle": "Verify the Checkboxes functionality To verify user is able to uncheck the checked checkbox",
+              "timedOut": null,
+              "duration": 626,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#checkboxes > :nth-child(3)').should('be.checked');\ncy.get('#checkboxes > :nth-child(3)').uncheck().should('not.be.checked');",
+              "err": {},
+              "uuid": "43364580-689a-44df-80d9-f759f86fb734",
+              "parentUUID": "b4135b95-1698-47a8-866b-e3568aa9745e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "b53203f5-90ae-436d-b052-c87a81c2cfaa",
+            "928f1f07-4247-4ab2-bf21-e3383e25e90a",
+            "a085d3c5-19a2-4fbf-b918-4a6c08b017d2",
+            "1a00a426-ea3b-4a33-abdf-e0fd448d7a27",
+            "43364580-689a-44df-80d9-f759f86fb734"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 12106,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}
